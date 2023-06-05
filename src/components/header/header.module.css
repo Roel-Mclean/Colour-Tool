@@ -1,0 +1,49 @@
+.header {
+    height: 7rem;
+    padding: 1rem 3rem;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: #E0E0E0;
+    border-width: 1px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.title {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    display: inline-block;
+    background: linear-gradient(90deg, #8E3B3B 0%, #593F51 28.13%, #2B4163 56.77%, #3E8797 84.9%, #99875A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.title::before {
+    content: url('/icon.png');
+    vertical-align: middle;
+    padding-right: 2rem;
+}
+
+.list {
+    display: flex;
+    list-style-type: none;
+    color: var(--grey);
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-reg);
+}
+
+.list > li {
+    padding-right: 4rem;
+}
+
+.list > li:last-child {
+    padding-right: 0;
+}
+
+.button {
+    margin-right: 2rem;
+}
